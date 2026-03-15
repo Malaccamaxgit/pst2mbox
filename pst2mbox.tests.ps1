@@ -294,7 +294,7 @@ Describe "Integration Tests" {
     if (-not $outlookAvailable) {
         return
     }
-    $testPst = Join-Path $testDir "Workday2024.pst"
+    $testPst = Join-Path $testDir "Outlook.pst"
     if (-not (Test-Path $testPst)) {
         Write-Warning "Test PST not found at $testPst"
         return
@@ -371,7 +371,7 @@ Describe "PST2MBOX Module" {
     }
 
     It "Get-ExportStatistics works on valid MBOX" {
-        $testMbox = Join-Path $testDir "Workday2024_100_v4.mbox"
+        $testMbox = Join-Path $testDir "TestArchive_100_v4.mbox"
         if (Test-Path $testMbox) {
             $stats = Get-ExportStatistics -MboxPath $testMbox
             $stats.TotalEmails | Should Not Be 0
