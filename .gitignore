@@ -1,0 +1,23 @@
+# PowerShell
+*.psd1~
+*.psm1~
+*.ps1xml~
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Test artifacts
+tests/*.mbox
+tests/test_*.mbox
+
+# Temp files
+*.tmp
+*.log
+
+# VS Code
+.vscode/
+
+# Pester test output
+test-results/
