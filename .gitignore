@@ -21,3 +21,6 @@ tests/test_*.mbox
 
 # Pester test output
 test-results/
+
+# Claude Code
+CLAUDE.md
